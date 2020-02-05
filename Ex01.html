@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="KR">
+    <head>
+        <title>LocalHost</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link>
+        <style>
+            div#q6{
+            background: green url("images/image.png") no-repeat left top;
+            padding: 10px;
+            }
+            div#q6 div{
+                margin-left: 200px;
+                background-color: yellow;
+                border: 6px dotted red;
+                padding: 5px;
+            }
+            div#q7 p#number{
+                display: inline;
+                border-right: 1px solid black;
+                font-size: 30px;
+                padding: 10px;
+            }
+            div#q8 table td, table{
+                border: 3px solid black;
+            }
+            div#q8 table{
+                background-color: yellow;
+            }
+            div#q8 table tr:nth-child(2n+1){
+                background-color: red;
+            }
+
+            div#q9{
+                background-color: black;
+                padding: 10px;
+            }
+            div#q9 a:link{
+                font-size: 20pt;
+                color: darkgreen;
+                text-decoration: none;
+            }
+            div#q9 a:visited{
+                color: orange;
+            }
+            div#q9 a:hover{
+                color: pink;
+                text-decoration: underline
+            }
+                
+        </style>
+    </head>
+    <body>
+       <div id="q6">
+        <div>
+            <h1>CSS</h1>
+            <p>CSS3는 W3C에서 한창 개발 중인 규격이다. W3C사이트에서 보면 CSS3 규격중에서 완료된 것(recommendation)도 있고 아직 한창 토의 중인 규격(workingdraft)도 있음을 알 수 있다. CSS Snapshot 2010 문서를 보면 CSS3 개발 현황을 알 수 있다.
+            </p>
+        </div>
+       </div>
+       <hr>
+       <div id="q7">
+           <p id="number">1.</p> <p id="content"> HTML로 문서의 내용을 정의한다.</p>
+           <p id="number">2.</p> <p id="content"> CSS3로 문서의 스타일을 정의한다.</p>
+           <p id="number">3.</p> <p id="content"> Javascript로 문서의 동작을 정의한다.</p>
+       </div>
+       <hr>
+
+       <div id="q8">
+           <table>
+        <tr><td>1</td><td rowspan="2">2</td><td>3</td><td>4</td></tr>
+        <tr><td>5</td></tr>
+           </table>
+       </div>
+       <hr>
+
+<div id="q9">
+    <a href="#">Hyper Link</a>
+</div>
+    </body>
+</html>

@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+    border: 1px solid gray;
+}
+body{
+    width: 920px;
+    margin: auto;
+}
+header h1#home{
+    text-align: center;
+}
+header h1#home a{
+    color: black;
+    text-decoration: none;
+}
+nav#top ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+nav#top ul li{
+    float: left;
+}
+nav#top ul li a{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+nav#top ul li a:hover{
+    /* hover = 마우스 오버시 */
+    background-color: hotpink;
+}
+
+nav#top ul li a:active{
+    /* active = 마우스 클릭시 */
+    background-color: pink;
+}
+nav#left{
+    width: 150px;
+    float: left;
+    overflow: hidden;
+}
+nav#left ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+nav#left ul li a{
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    padding: 5px;
+}
+nav#left ul li a:hover{
+    background-color: silver;
+}
+nav#left ul li a:active{
+    background-color: gray;
+}
+section{
+    float: right;
+    width: 760px;
+    height: 500px;
+}
+footer{
+    clear: both;
+    width: auto;
+    background-color: gray;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+footer p{
+    font-size: 10pt;
+    margin: 5px 0px;
+}
+footer a{
+    text-decoration: none;
+}
+footer a:hover{
+    color: goldenrod;
+}
+footer a:active{
+    color: gold;
+}

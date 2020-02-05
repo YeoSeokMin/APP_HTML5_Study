@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="KR">
+    <head>
+        <title>overflow 프로퍼티</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link>
+        <style>
+        p {
+            width: 15em;
+            height: 3em;
+            border: 1px solid lightgreen;
+        }
+        .hidden {overflow: hidden;}
+        .visible {overflow: visible;}
+        .scroll {overflow: scroll;}
+        </style>
+    </head>
+    <body>
+       <h3>overflow프로퍼티</h3>
+       <hr>
+       <p class = "hidden">overflow에 hidden 값을 적용하면 
+           박스를 넘어가는 내용이 잘려 보이지 않습니다.</p>
+       <p class = "visible">overflow에 visible 값을 적용하면
+           콘텐츠가 박스를 넘어가서도 출력됩니다.</p>
+       <p class="scroll">overflow에 scroll 값을 적용하면
+           박스에 스크롤바를 붙혀 출력합니다.</p>
+    </body>
+</html>

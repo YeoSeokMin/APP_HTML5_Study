@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="KR">
+    <head>
+        <title>오디오</title>
+        <meta charset="UTF-8">
+    <link>
+    <style></style>
+    </head>
+    <body>
+        <audio autoplay controls>
+        <source src="multi/horse.ogv" type="audio/ogv">
+            <source src="multi/horse.mp3" type="audio/mp3">
+        <!-- autoplay = 자동재생, controls = 화면에 제어기 보일것 -->
+        사용하시는 브라우저는 audio 태그를 지원하지 않습니다
+    </audio><br>
+
+    <video width="420" controls>
+    <source src="multi/movie.ogv"></source>
+    <source src="multi/movie.mp4"></source>
+    <p>사용하시는 브라우저는 video 태그를 지원하지 않습니다</p>
+    </video>
+
+
+    <div style="text-align: center;">
+        <button onclick="playPause()">Play/Pause</button>
+        <button onclick="makeBig()">Big</button>
+        <button onclick="makeSmall()">Small</button>
+        <button onclick="makeNormal()">Normal</button>
+        <br><br>
+        <video controls width="420" id="video1">
+            <source src="multi/mov_bbb.ogv" type="video/ogv">
+            <source src="multi/mov_bbb.mp4" type="video/mp4">
+            사용하시는 브라우저는 Video 태그를 지원하지 않습니다.
+        </video>
+    </div>
+<script>
+    var myVideo = document.getElementById("video1");
+
+    function playPause() {
+        // function{} = "함수를 입력한다" 라는뜻 꼭 입력해야함.
+        if(myVideo.pause)
+            myVideo.play();
+        // pause가 ture 면 비디오를 플레이해라.
+        else
+            myVideo.pause();
+    }
+
+    function makeBig(){
+        myVideo.makeBig;
+            myVideo.width = 560;
+    }
+
+    function makeSmall(){
+        myVideo.makeSmall;
+            myVideo.width = 320;
+        
+    }
+
+    function makeNormal(){
+        myVideo.makeNormal;
+            myVideo.width = 420;
+        
+    }
+    </script>
+
+    </body>
+</html>

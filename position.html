@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="KR">
+    <head>
+        <title>Position</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link>
+        <style>
+            #one{
+                background-color: cyan;
+                width: 200px;
+                height: 50px;
+            }
+            #two{
+                position: relative;
+                /* 포지션이 스태틱(static)일경우 상하좌우 움직임 속성을 받지 않음. */
+                background-color: yellow;
+                width: 200px;
+                height: 50px;
+                top: 50px;
+                left: 100px;
+                z-index: 100;
+                
+            }
+            #three{
+                background-color: lightgreen;
+                width: 200px;
+                height: 50px;
+                z-index: 101;
+            }
+        </style>
+    </head>
+    <body>
+       <p id="one">block #1</p>
+       <div id="two">
+           block #2<br>
+           Position:조정대상;
+       </div>
+       <p id="three">block #3</p>
+    </body>
+</html>

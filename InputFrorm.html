@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="KR">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <link>
+        <style></style>
+    </head>
+    <body>
+       <form action="test.jsp" method="POST">
+           <fieldset>
+               <legend>인적사항 입력</legend>
+           <p>이름:<input type="text" name="firstname"></p>
+           <p>성:<input type="text" name="lastname"></p>
+           <p><input type="submit" value="전송">
+           <input type="reset" value="초기화"></p>
+           </fieldset>
+
+       </form>
+       <form>
+           <input type="radio" name="gender" value="male" checked>남성<br>
+           <input type="radio" name="gender" value="female">여성<br>
+       </form>
+       <form action="test.jsp">
+           <fieldset>
+           <legend>인적사항 입력</legend>
+           <p>이름(*) <input type="text" name="name" value="micky" readonly></p>
+           <p>성(*) <input type="text" name="name" ></p>
+           <p>생년월일(*) <input type="date" name="bday"></p>
+           <p><input type="radio" name="gender" value="male">남자
+              <input type="radio" name="gender" value="female">여자</p>
+           
+           <p>전화번호(*) <input type="tel" name="phone">
+            통신사<select name="tong">
+                <option value="SK">SK</option>
+                <option value="LG">LG</option>
+                <option value="KT">KT</option></select></p>
+           
+           <p>학력(*) <select name="study">
+               <option value="cho">초등학교 졸업</option>
+               <option value="zhung">중학교 졸업</option>
+               <option value="go">고등학교 졸업</option>
+               <option value="dae">대학교 졸업</option>
+           </select></p>
+           자기소개(*)<br><textarea name="sull" rows="5" cols="50"></textarea><br>
+           <input type="submit" value="전송">
+           <input type="reset" value="재입력">
+        </fieldset>
+       </form>
+
+       <form>
+        <fieldset>
+           <legend>datalist</legend>
+           <input type="text" name="broser" list="broser">
+           <datalist id="brosers">
+               <option value="IE">익스플로러</option>
+               <option value="Chrome">크롬</option>
+               <option value="Firefox">파이어폭스</option>
+               <option value="Mosaic">모자이크</option>
+           </datalist>
+           <p><input type="submit" value="전송"></p>
+           </fieldset>
+       </form>
+
+
+       <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+           <fieldset>
+               <legend>output</legend>
+               <input type="range" id="a" name="a" value="0">100+
+               <input type="number" id="b" name="b" value="50"> =
+               <output name="x" for="a b"></output>
+               <p><input type="submit" value="전송"></p>
+           </fieldset>
+       </form>
+
+       <form>
+           <fieldset>
+        <input type="checkbox" name="vehicle1" value="Bike"> I have a bike<br>
+        <input type="checkbox" name="vehicle2" value="Car"> I have a car<br>
+        <input type="checkbox" name="vehicle3" value="Jeep"> I have a Jeep
+        <p><input type="submit" value="전송"></p>
+           </fieldset>
+      </form>
+    </body>
+</html>
